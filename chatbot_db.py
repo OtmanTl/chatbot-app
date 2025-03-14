@@ -118,7 +118,7 @@ Settings.llm = Groq(
     model="llama3-70b-8192",
     api_key=os.getenv("GROQ_API_KEY")
 )
-Settings.embed_model = FastEmbedEmbedding(model_name="jinaai/jina-embeddings-v2-base-en")
+Settings.embed_model = FastEmbedEmbedding(model_name="all-MiniLM-L6-v2")
 
 def extract_survey_id(path):
     """Extract survey ID from path with fallback to 'unknown'"""
